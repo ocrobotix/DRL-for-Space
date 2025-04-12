@@ -7,32 +7,8 @@ Welcome to our open innovation site, where we invite you to explore our groundbr
 
 Comment
 --------------
-<script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
-<script>
-  window.addEventListener("DOMContentLoaded", function() {
-    window.AgentInitializer.init({
-      agentRenderURL: "https://agent.jotform.com/01962663544672b891ebbd2e010123bfd4dc",
-      rootId: "JotformAgent-01962663544672b891ebbd2e010123bfd4dc",
-      formID: "01962663544672b891ebbd2e010123bfd4dc",
-      queryParams: ["skipWelcome=1", "maximizable=1"],
-      domain: "https://www.jotform.com",
-      isDraggable: false,
-      background: "linear-gradient(180deg, #B3D37B 0%, #B3D37B 100%)",
-      buttonBackgroundColor: "#3C4C1E",
-      buttonIconColor: "#FFF",
-      variant: false,
-      customizations: {
-        "greeting": "Yes",
-        "greetingMessage": "Hi! How can I assist you?",
-        "openByDefault": "No",
-        "pulse": "Yes",
-        "position": "right",
-        "autoOpenChatIn": "0"
-      },
-      isVoice: false,
-    });
-  });
-</script>
+
+
 
 
 We'll start with an [An Overview of Python](https://zingale.github.io/computational_astrophysics/python/jupyter.html)
@@ -167,3 +143,30 @@ Type Ia supernova](https://zingale.github.io/computational_astrophysics/fitting/
 :::
 
 ::::
+
+<script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      agentRenderURL: "https://agent.jotform.com/01962663544672b891ebbd2e010123bfd4dc",
+      rootId: "JotformAgent-01962663544672b891ebbd2e010123bfd4dc",
+      formID: "01962663544672b891ebbd2e010123bfd4dc",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https://www.jotform.com",
+      isDraggable: false,
+      background: "linear-gradient(180deg, #B3D37B 0%, #B3D37B 100%)",
+      buttonBackgroundColor: "#3C4C1E",
+      buttonIconColor: "#FFF",
+      variant: false,
+      customizations: {
+        "greeting": "Yes",
+        "greetingMessage": "Hi! How can I assist you?",
+        "openByDefault": "No",
+        "pulse": "Yes",
+        "position": "right",
+        "autoOpenChatIn": "0"
+      },
+      isVoice: false,
+    });
+  });
+</script>
