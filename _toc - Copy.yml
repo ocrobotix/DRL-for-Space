@@ -1,0 +1,58 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: landing_page   # The first/main page
+#root: intro   # The first/main page
+
+
+parts:
+  - caption: START HERE
+    numbered: False
+    chapters:
+      - file: start_here.ipynb
+
+  - caption: WHAT IS DRL?
+    numbered: False
+    chapters:
+      - file: what_is_drl
+        sections:
+          - file: what_is_drl/page_1.ipynb
+          - file: what_is_drl/page_2.ipynb
+          - file: what_is_drl/page_3.ipynb
+
+  - caption: WHY DRL FOR SPACE?
+    numbered: False
+    chapters:
+      - file: why_drl_for_space
+        sections:
+          - file: why_drl_for_space/page_1.ipynb
+
+  - caption: WHAT IS THE CURRENT STATE?
+    numbered: False
+    chapters:
+      - file: what_is_current_state
+        sections:
+          - file: what_is_current_state/page_1.ipynb
+          - file: what_is_current_state/page_2.ipynb
+          - file: what_is_current_state/page_3.ipynb
+
+  - caption: GLOSSARY
+    numbered: False
+    chapters:
+      - file: glossary/glossary-1.ipynb
+      - file: glossary/glossary-2.ipynb
+
+
+  - caption: A P P E N D I X
+    numbered: True
+    chapters:
+      - file: appendix/appendix.md
+      - file: appendix/references.ipynb
+      - file: appendix/tutorials.ipynb
+      - file: appendix/clipboard.ipynb
+
+  - caption: BLOG
+    numbered: False
+    chapters:
+      - file: blog/blog.md        # TBD
