@@ -26,6 +26,6 @@ git push -u origin main
 
 # ========= Publish to GitHub Pages =========
 Write-Host "`n🌍 Publishing to GitHub Pages..."
-python -m ghp_import -n -p -f DRL_in_Spaace/_build/html
+python -m ghp_import -n -p -f DRL_in_Space/_build/html
 
 
