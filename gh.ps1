@@ -1,4 +1,3 @@
-
 # Deactivate any active conda environment
 conda deactivate
 
@@ -9,18 +8,16 @@ $my_book = "DRL3"
 $repoUrl = "https://github.com/ocrobotix/$my_book.git"
 
 # ========= Activate jbook_template Environment =========
-& "$venv_dir\Scripts\Activate.ps1"  # ✅ Correctly activates the venv
+& "$venv_dir\Scripts\Activate.ps1"
 
 # ========= Change to Working Directory =========
-Set-Location $work_dir              # ✅ Prefer Set-Location in PowerShell
+Set-Location $work_dir
 
 # ========= Build Jupyter Book =========
 jb clean .
 jb build .
 
-# ========= Create GitHub Repository =========
-
-
+# ========= Initialize Git Repository =========
 if (!(Test-Path ".git")) {
     Write-Host "📂 Initializing Git repo in $work_dir..."
     git init
@@ -29,21 +26,28 @@ if (!(Test-Path ".git")) {
     git commit -m "Initial commit"
 }
 
+git config --global core.autocrlf true  # Suppress CRLF warnings
 
-git config --global core.autocrlf true      # suppress warning
+# ========= Create GitHub Repository =========
+if (-not (gh repo view "ocrobotix/$my_book" 2>$null)) {
+    Write-Host "`n📦 Creating GitHub repo '$my_book'..."
+    gh repo create "ocrobotix/$my_book" --public --source . --remote origin --push
+} else {
+    Write-Host "🔗 GitHub repo already exists: $repoUrl"
+}
 
-Write-Host "`n📦 Creating GitHub repo '$my_book'..."
-gh repo create "ocrobotix/$my_book" --public --source . --remote origin --push
-
-
-# ========= Confirm Remote and Push =========
-
+# ========= Commit and Push =========
 git add .
-git commit -m "Source commit" 2>$null  # Suppress warning if nothing to commit
+try {
+    git commit -m "Source commit"
+} catch {
+    Write-Host "ℹ Nothing to commit, working tree clean."
+}
 git push -u origin main
 
 # ========= Publish to GitHub Pages =========
 Write-Host "`n🌍 Publishing to GitHub Pages..."
 python -m ghp_import -n -p -f _build/html
 
-
+Write-Host "`n✅ Book built and deployed!"
+Write-Host "🌐 View it at: https://ocrobotix.github.io/$my_book"
