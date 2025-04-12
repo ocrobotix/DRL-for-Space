@@ -2,9 +2,17 @@
 # Deactivate any active conda environment
 conda deactivate
 
-# ========= Activate jbook_template Environment =========
+# ========= CONFIGURATION =========
+$work_dir = "D:\SANDBOX\Jupyterbooks\RL_Books\DRL_in_Space"
+$venv_dir = "D:\SANDBOX\Jupyterbooks\jbook_template"
+$my_book = "DRL3"
+$repoUrl = "https://github.com/ocrobotix/$my_book.git"
 
-../../jbook_template/Scripts/activate
+# ========= Activate jbook_template Environment =========
+& "$venv_dir\Scripts\Activate.ps1"  # ✅ Correctly activates the venv
+
+# ========= Change to Working Directory =========
+Set-Location $work_dir              # ✅ Prefer Set-Location in PowerShell
 
 # ========= Build Jupyter Book =========
 jb clean .
@@ -26,6 +34,6 @@ git push -u origin main
 
 # ========= Publish to GitHub Pages =========
 Write-Host "`n🌍 Publishing to GitHub Pages..."
-python -m ghp_import -n -p -f DRL_in_Space/_build/html
+python -m ghp_import -n -p -f _build/html
 
 
