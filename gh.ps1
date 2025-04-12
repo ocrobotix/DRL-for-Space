@@ -21,10 +21,20 @@ jb build .
 # ========= Create GitHub Repository =========
 
 
-Write-Host "`n📦 Creating GitHub repo 'DRL'..."
+if (!(Test-Path ".git")) {
+    Write-Host "📂 Initializing Git repo in $work_dir..."
+    git init
+    git branch -M main
+    git add .
+    git commit -m "Initial commit"
+}
+
+
 git config --global core.autocrlf true      # suppress warning
 
-gh repo create "ocrobotix/DRL2" --public --source . --remote origin --push
+Write-Host "`n📦 Creating GitHub repo '$my_book'..."
+gh repo create "ocrobotix/$my_book" --public --source . --remote origin --push
+
 
 # ========= Confirm Remote and Push =========
 
