@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Tutorials &#8212; DRL for the Space Enterprise</title>
+    <title>Our Project &#8212; DRL for the Space Enterprise</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'appendix/tutorials';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'start_here/our_plan';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3. Resources" href="resources.html" />
-    <link rel="prev" title="1.1. Glossary Section 1" href="glossary_section_1.html" />
+    <link rel="next" title="What’s the Current State?" href="../FAQs/what_is_current_state.html" />
+    <link rel="prev" title="Deep Reinforcement Learning for Space" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,8 +180,8 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">START HERE</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../start_here/our_plan.html">Our Project</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Our Project</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAQs</span></p>
 <ul class="nav bd-sidenav">
@@ -191,13 +191,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../FAQs/what_is_cwg.html">What is the canonical wargame?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">APPENDIX</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="glossary.html">1. Glossary</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="glossary_section_1.html">1.1. Glossary Section 1</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../appendix/glossary.html">1. Glossary</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix/glossary_section_1.html">1.1. Glossary Section 1</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">3. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/tutorials.html">2. Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/resources.html">3. Resources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">BLOG</span></p>
 <ul class="nav bd-sidenav">
@@ -274,7 +274,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fappendix/tutorials.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fstart_here/our_plan.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -304,7 +304,7 @@
       
       
       
-      <li><a href="../_sources/appendix/tutorials.ipynb" target="_blank"
+      <li><a href="../_sources/start_here/our_plan.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -314,7 +314,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -375,7 +375,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -386,11 +388,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tutorials</h1>
+    <h1>Our Project</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-1-game-and-algorithm-review">Phase 1: Game and Algorithm Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-2-canonical-war-game-development">Phase 2: Canonical War Game Development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-3-canonical-aigent-training">Phase 3: Canonical  Aigent Training</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -400,8 +412,92 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tutorials">
-<h1><span class="section-number">2. </span>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="our-project">
+<h1>Our Project<a class="headerlink" href="#our-project" title="Link to this heading">#</a></h1>
+<p>Our team has embarked on a research project to develop an AI-driven canonical war game and warfighting agent to evaluate conflict scenarios, enhance planning, shape military training, and inform decision-making. The project is in three phases.</p>
+<section id="phase-1-game-and-algorithm-review">
+<h2>Phase 1: Game and Algorithm Review<a class="headerlink" href="#phase-1-game-and-algorithm-review" title="Link to this heading">#</a></h2>
+<p>We begin by evaluating the state-of-the-art algorithms against a spectrum of strategy games—from simple board games to complex real-time strategy (RTS) games (e.g., StarCraft II). This comparative framework will help us understand which algorithms generalize best across environments.</p>
+<p>Key games to include (from simplest to complex):</p>
+<ul class="simple">
+<li><p>Perfect information games: Tic-Tac-Toe, Chess, Go</p></li>
+<li><p>Atari games: Simple environments with visual input data</p></li>
+<li><p>Partial information games: Poker, Stratego</p></li>
+<li><p>Simple RTS: microRTS, simplified Starcraft</p></li>
+<li><p>Complex RTS: Starcraft II, DOTA 2</p></li>
+<li><p>Modern military simulations: Commercial and USG funded (e.g., DARPA’s Strategic Capability Office simulations)</p></li>
+</ul>
+<p>Key algorithms to include:</p>
+<ul class="simple">
+<li><p>Evolutionary / Genetic</p></li>
+<li><p>Deep Reinforcement Learning: AlphaZero, MuZero, DQN, DDPG, PPO, A3C, etc.</p></li>
+<li><p>Multi-agent approaches: QMIX, MADDPG</p></li>
+<li><p>Imitation learning and Inverse RL</p></li>
+<li><p>Hybrid approaches</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Information below is only representative and heuristic. Selective verification of the table is a goal of the project.</p>
+</div>
+<p><img alt="figure1" src="../_images/figure1.jpg" /></p>
+<p style="text-align: center;"><em>Figure 1. Games & Algorithms Matrix</em></p>
+</section>
+<section id="phase-2-canonical-war-game-development">
+<h2>Phase 2: Canonical War Game Development<a class="headerlink" href="#phase-2-canonical-war-game-development" title="Link to this heading">#</a></h2>
+<p>For Phase 2, we will develop a comprehensive RTS-style war game that incorporates realistic conflict scenarios across all operational domains. and simulation platforms, This canonical war game (CWG) will simulate unified global combat, incorporating land, air, sea, space, and cyberspace domains. P hase 2 will also assimilate lessons from real-world doctrine and military strategy.</p>
+<ol class="arabic simple">
+<li><p>Environment design:</p>
+<ul class="simple">
+<li><p>Multi-domain representation (land, air, sea, space, cyber)</p></li>
+<li><p>Realistic physics and constraint modeling</p></li>
+<li><p>Asymmetric information structures</p></li>
+</ul>
+</li>
+<li><p>State representation:</p>
+<ul class="simple">
+<li><p>Hierarchical command structures</p></li>
+<li><p>Resource constraints (logistics, supply chains)</p></li>
+<li><p>Intelligence gathering mechanisms</p></li>
+</ul>
+</li>
+<li><p>Action space design:</p>
+<ul class="simple">
+<li><p>Tactical vs. strategic decisions</p></li>
+<li><p>Time scales (immediate actions vs. long-term planning)</p></li>
+<li><p>Command and control limitations</p></li>
+</ul>
+</li>
+</ol>
+<p>This CWG will focus on tactical and strategic realism, embedding proper mechanics, accurate physics, and simulate the logistics of war along with rules and doctrine.  The initial game will be “headless” (minimal graphics) to test verify the game logic, prediction, and control. Once validated, graphics can be added to convert the game  into a purpose-built  simulation platform.</p>
+</section>
+<section id="phase-3-canonical-aigent-training">
+<h2>Phase 3: Canonical  Aigent Training<a class="headerlink" href="#phase-3-canonical-aigent-training" title="Link to this heading">#</a></h2>
+<p>Using DRL and other advanced AI methods, we will train an agent to adapt, learn, and prevail against the CWG over thousands of simulated multi-domain conflict scenarios. The goal is to create an AI capable of assisting in mission planning, in-theater decision-making, and post-conflict analysis.</p>
+<ol class="arabic simple">
+<li><p>Training methodology:</p>
+<ul class="simple">
+<li><p>Self-play for symmetric scenarios</p></li>
+<li><p>Red team/Blue team approaches for asymmetric scenarios</p></li>
+<li><p>Curriculum learning from simple to complex scenarios</p></li>
+</ul>
+</li>
+<li><p>Decision architectures:</p>
+<ul class="simple">
+<li><p>Hierarchical / multi-level decision making</p></li>
+<li><p>Observation priorities (attention) in large state spaces</p></li>
+<li><p>Long / short term memory over extended time spans</p></li>
+</ul>
+</li>
+<li><p>Evaluation framework:</p>
+<ul class="simple">
+<li><p>Performance against human experts</p></li>
+<li><p>Robustness to unexpected scenarios (“fog of war”)</p></li>
+<li><p>Human interpretability of agent decisions</p></li>
+</ul>
+</li>
+</ol>
+<p>Phase 3 aims to deliver a high-performing AI agent that supports warfighters with predictive insights and scenario analysis. The end goal is to develop a superhuman agent that enhances human decision-making before, during, and after conflict, delivering a decisive advantage in global 21st-century warfare.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -417,7 +513,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./appendix"
+            path: "./start_here"
         },
         predefinedOutput: true
     }
@@ -435,20 +531,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="glossary_section_1.html"
+       href="../intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.1. </span>Glossary Section 1</p>
+        <p class="prev-next-title">Deep Reinforcement Learning for Space</p>
       </div>
     </a>
     <a class="right-next"
-       href="resources.html"
+       href="../FAQs/what_is_current_state.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Resources</p>
+        <p class="prev-next-title">What’s the Current State?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -458,6 +554,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-1-game-and-algorithm-review">Phase 1: Game and Algorithm Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-2-canonical-war-game-development">Phase 2: Canonical War Game Development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-3-canonical-aigent-training">Phase 3: Canonical  Aigent Training</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
