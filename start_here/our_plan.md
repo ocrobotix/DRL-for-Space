@@ -27,7 +27,7 @@ Key algorithms to include:
 Information below is only representative and heuristic. Selective verification of the table is a goal of the project.
 ```
 
-![figure1](figure1.jpg)
+![figure1](../_static/images/figure1.jpg)
 
 <p style="text-align: center;"><em>Figure 1. Games & Algorithms Matrix</em></p>
 
