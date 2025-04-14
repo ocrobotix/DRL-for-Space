@@ -2,6 +2,44 @@
 
 
 
+
+
+## Images and Video
+
+Can be tricky and frustrating. Main problem is that when you build a Jupyter Book with `jb build .`, by default Jupyter Book <u>doesn't</u> automatically copy all assets folders to the _build/html directory. This is a known issue that occurs when linking to local assets like images, data, or code files that you want available in the HTML version [GitHub](https://github.com/executablebooks/jupyter-book/issues/790). To fix this add the following to the config file:
+
+![image-20250414132450724](C:/Users/terry/AppData/Roaming/Typora/typora-user-images/image-20250414132450724.png)
+
+
+
+Here are two effective ways to solve this problem:Always use relative paths, not absolute. Some editors like Typora provide options to do './subfolder/file'	instead of 	'subfolder/file'
+
+*Check Typora's settings in File>Preferences>Image*
+
+#### Images and Relative Path
+
+Always use relative path. Try dragging and dropping first. Typora will figure everything out for you!
+
+If you're working with a markdown file located at 'Project_Dir/appendix/clipboard.md' while the image file is in a subfolder 'Project_Dir/appendix/assets/baby.png' do this:
+
+![Alt text for image](assets/baby.png)
+
+
+
+![neumann](neumann.jpg)
+
+
+
+![24601](assets/24601.png)
+
+
+
+
+
+![mrts](../blog/assets/mrts.jpg)
+
+<video src="../blog/assets/murts.mp4"></video>
+
 ## Continuation in Markdown
 
 This is a long sentence that goes on and on...
