@@ -2,7 +2,7 @@
 conda deactivate
 
 # ========= CONFIGURATION =========
-$work_dir = "D:\SANDBOX\Jupyterbooks\RL_Books\DRL5"
+$work_dir = "D:\SANDBOX\Jupyterbooks\RL_Books\DRL_in_Space"
 $venv_dir = "D:\SANDBOX\Jupyterbooks\jbook_template"
 $my_book = "DRL-for-Space-test"
 $repoUrl = "https://github.com/ocrobotix/$my_book.git"
