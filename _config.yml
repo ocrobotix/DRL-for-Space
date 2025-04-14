@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: DRL for the Space Enterprise
-author: 
+author: The Blue Team
 logo: logo.png
 
 # Force re-execution of notebooks on each build.

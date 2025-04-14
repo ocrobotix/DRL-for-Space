@@ -4,55 +4,33 @@
 format: jb-book
 root: intro   # The first/main page
 
-
 parts:
   - caption: START HERE
     numbered: False
     chapters:
-      - file: start_here.ipynb
+      - file: start_here/our_plan.md
 
-  - caption: WHAT IS DRL?
+  - caption: FAQs
     numbered: False
     chapters:
-      - file: what_is_drl
-        sections:
-          - file: what_is_drl/page_1.ipynb
-          - file: what_is_drl/page_2.ipynb
-          - file: what_is_drl/page_3.ipynb
-
-  - caption: WHY DRL FOR SPACE?
-    numbered: False
-    chapters:
-      - file: why_drl_for_space
-        sections:
-          - file: why_drl_for_space/page_1.ipynb
-
-  - caption: WHAT IS THE CURRENT STATE?
-    numbered: False
-    chapters:
-      - file: what_is_current_state
-        sections:
-          - file: what_is_current_state/page_1.ipynb
-          - file: what_is_current_state/page_2.ipynb
-          - file: what_is_current_state/page_3.ipynb
-
-  - caption: GLOSSARY
-    numbered: False
-    chapters:
-      - file: glossary/glossary-1.ipynb
-      - file: glossary/glossary-2.ipynb
+      - file: FAQs/what_is_current_state.ipynb
+      - file: FAQs/what_is_drl.ipynb
+      - file: FAQs/why_drl_for_space.ipynb
+      - file: FAQs/what_is_cwg.ipynb
 
 
-  - caption: A P P E N D I X
+  - caption: APPENDIX
     numbered: True
     chapters:
-      - file: appendix/appendix.md
-      - file: appendix/references.ipynb
+      - file: appendix/glossary.md
+        sections:
+          - file: appendix/glossary_section_1.md
       - file: appendix/tutorials.ipynb
-      - file: appendix/clipboard.ipynb
+      - file: appendix/resources.md
 
   - caption: BLOG
     numbered: False
     chapters:
-      - file: blog/3_18_2025.ipynb        # TBD
-      #- file: blog/blog1a.md
+      #- file: blog/march_2025.ipynb        # problem with notebook format
+      - file: blog/march.md        # 
+      - file: blog/april.md        # 
