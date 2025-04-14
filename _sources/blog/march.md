@@ -14,8 +14,13 @@ Below is a sample reproduction of their work taken from [**Gym-μRTS: Toward Aff
 
 Click to play the video.
 
+<video width="640" height="480" controls>
+<source src="murts.mp4" type="video/mp4">
+<source src="murts.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
 
 
 
-<video src="assets/murts.mp4"></video>
+
 
