@@ -20,7 +20,6 @@ Click to play the video.
 Your browser does not support the video tag.
 </video>
 
-<video src="../_static/videos/murts.mp4"></video>
 
 
 

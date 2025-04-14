@@ -6,39 +6,51 @@
 
 ## Images and Video
 
-Can be tricky and frustrating. Main problem is that when you build a Jupyter Book with `jb build .`, by default Jupyter Book <u>doesn't</u> automatically copy all assets folders to the _build/html directory. This is a known issue that occurs when linking to local assets like images, data, or code files that you want available in the HTML version [GitHub](https://github.com/executablebooks/jupyter-book/issues/790). To fix this add the following to the config file:
+Can be tricky and frustrating. Main problem is that when you build a Jupyter Book with `jb build .`, by default Jupyter Book <u>doesn't</u> automatically copy all assets folders to the _build/html directory. This is a known issue that occurs when linking to local assets like images, data, or code files that you want available in the HTML version [GitHub](https://github.com/executablebooks/jupyter-book/issues/790). 
 
-![image-20250414132450724](C:/Users/terry/AppData/Roaming/Typora/typora-user-images/image-20250414132450724.png)
+The easiest fix is this:
+
+1.  Put all image and video files in the _static folder in the root directory. Jupyterbook copies these over by default.  So for example
+
+   * root/_static/images/pic1.png
+
+   * root/_static/videos/video1.mp4
+
+2. Drag and drop these into the md page
 
 
 
-Here are two effective ways to solve this problem:Always use relative paths, not absolute. Some editors like Typora provide options to do './subfolder/file'	instead of 	'subfolder/file'
+Alternate way is to create your own folders, put your images and videos there, and modify the config file as follows:
+
+![Screenshot](../_static/images/Screenshot.png)
+
+This is effectively the same as putting stuff into the _static folder. The only advantage is that you can create your folder anywhere, not just at the rootdir. 
+
+##### Typora specific
 
 *Check Typora's settings in File>Preferences>Image*
 
+Some editors like Typora provide special options for referencing files, for example,  './folder/file' instead of 'folder/file'
+
+
+
 #### Images and Relative Path
 
-Always use relative path. Try dragging and dropping first. Typora will figure everything out for you!
-
-If you're working with a markdown file located at 'Project_Dir/appendix/clipboard.md' while the image file is in a subfolder 'Project_Dir/appendix/assets/baby.png' do this:
-
-![Alt text for image](assets/baby.png)
-
-
-
-![neumann](neumann.jpg)
-
-
-
-![24601](assets/24601.png)
+<u>Always use relative path.</u> This is especially important when you publish to cloud or transfer to other computers. Try dragging and dropping first and let the markdown editor do the heavy lifting by locating the files and providing the snippet.
 
 
 
 
 
-![mrts](../blog/assets/mrts.jpg)
 
-<video src="../blog/assets/murts.mp4"></video>
+
+<video src="../assets/murts.mp4"></video>
+
+![mrts](../assets/mrts.jpg)
+
+![24601](../assets/24601.png)
+
+
 
 ## Continuation in Markdown
 
