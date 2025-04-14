@@ -34,7 +34,7 @@ html:
 # Ensures subfolders get copied to _build folder
 sphinx:
   config:
-    html_extra_path: ["blog/assets"]
+    html_extra_path: ["assets"]
 
 
 # Ensure you're only building files in the TOC 
