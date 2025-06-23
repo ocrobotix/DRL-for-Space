@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Our Project &#8212; DRL for the Space Enterprise</title>
+    <title>June 2025 &#8212; DRL for the Space Enterprise</title>
   
   
   
@@ -57,11 +57,10 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'start_here/our_plan';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'blog/june';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="What’s the Current State?" href="../FAQs/what_is_current_state.html" />
-    <link rel="prev" title="Deep Reinforcement Learning for Space" href="../intro.html" />
+    <link rel="prev" title="April 2025" href="april.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,8 +179,8 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">START HERE</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Our Project</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../start_here/our_plan.html">Our Project</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAQs</span></p>
 <ul class="nav bd-sidenav">
@@ -200,10 +199,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../appendix/resources.html">3. Resources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">BLOG</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../blog/march.html">March 2025</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../blog/april.html">April 2025</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../blog/june.html">June 2025</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="march.html">March 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="april.html">April 2025</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">June 2025</a></li>
 </ul>
 
     </div>
@@ -275,7 +274,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fstart_here/our_plan.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fblog/june.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +304,7 @@
       
       
       
-      <li><a href="../_sources/start_here/our_plan.md" target="_blank"
+      <li><a href="../_sources/blog/june.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -389,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Our Project</h1>
+    <h1>June 2025</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -399,9 +398,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-1-game-and-algorithm-review">Phase 1: Game and Algorithm Review</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-2-canonical-war-game-development">Phase 2: Canonical War Game Development</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-3-canonical-aigent-training">Phase 3: Canonical  Aigent Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-agent-reinforcement-learning">Multi-Agent Reinforcement Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicability-to-war-games-research">Applicability to War-Games Research</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions">Future Directions</a></li>
 </ul>
             </nav>
         </div>
@@ -413,91 +412,75 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="our-project">
-<h1>Our Project<a class="headerlink" href="#our-project" title="Link to this heading">#</a></h1>
-<p>Our team has embarked on a research project to develop an AI-driven canonical war game and warfighting agent to evaluate conflict scenarios, enhance planning, shape military training, and inform decision-making. The project is in three phases.</p>
-<section id="phase-1-game-and-algorithm-review">
-<h2>Phase 1: Game and Algorithm Review<a class="headerlink" href="#phase-1-game-and-algorithm-review" title="Link to this heading">#</a></h2>
-<p>We begin by evaluating the state-of-the-art algorithms against a spectrum of strategy games—from simple board games to complex real-time strategy (RTS) games (e.g., StarCraft II). This comparative framework will help us understand which algorithms generalize best across environments.</p>
-<p>Key games to include (from simplest to complex):</p>
-<ul class="simple">
-<li><p>Perfect information games: Tic-Tac-Toe, Chess, Go</p></li>
-<li><p>Atari games: Simple environments with visual input data</p></li>
-<li><p>Partial information games: Poker, Stratego</p></li>
-<li><p>Simple RTS: microRTS, simplified Starcraft</p></li>
-<li><p>Complex RTS: Starcraft II, DOTA 2</p></li>
-<li><p>Modern military simulations: Commercial and USG funded (e.g., DARPA’s Strategic Capability Office simulations)</p></li>
-</ul>
-<p>Key algorithms to include:</p>
-<ul class="simple">
-<li><p>Evolutionary / Genetic</p></li>
-<li><p>Deep Reinforcement Learning: AlphaZero, MuZero, DQN, DDPG, PPO, A3C, etc.</p></li>
-<li><p>Multi-agent approaches: QMIX, MADDPG</p></li>
-<li><p>Imitation learning and Inverse RL</p></li>
-<li><p>Hybrid approaches</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Information below is only representative and heuristic. Selective verification of the table is a goal of the project.</p>
-</div>
-<p><img alt="figure1" src="../_images/figure1.jpg" /></p>
-<p style="text-align: center;"><em>Figure 1. Games & Algorithms Matrix</em></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="june-2025">
+<h1>June 2025<a class="headerlink" href="#june-2025" title="Link to this heading">#</a></h1>
+<section id="multi-agent-reinforcement-learning">
+<h2>Multi-Agent Reinforcement Learning<a class="headerlink" href="#multi-agent-reinforcement-learning" title="Link to this heading">#</a></h2>
+<p><strong>MAgent</strong> is a scalable reinforcement learning platform designed to support research in <strong>many-agent environments</strong>, enabling simulations with thousands of agents on a single GPU server. It facilitates the study of emergent collective behaviors (e.g., communication, coordination, altruism) and optimal policy learning in large-scale AI societies.</p>
 </section>
-<section id="phase-2-canonical-war-game-development">
-<h2>Phase 2: Canonical War Game Development<a class="headerlink" href="#phase-2-canonical-war-game-development" title="Link to this heading">#</a></h2>
-<p>For Phase 2, we will develop a comprehensive RTS-style war game that incorporates realistic conflict scenarios across all operational domains. and simulation platforms, This canonical war game (CWG) will simulate unified global combat, incorporating land, air, sea, space, and cyberspace domains. P hase 2 will also assimilate lessons from real-world doctrine and military strategy.</p>
+<section id="applicability-to-war-games-research">
+<h2>Applicability to War-Games Research<a class="headerlink" href="#applicability-to-war-games-research" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Environment design:</p>
+<li><p><strong>Scalability for Complex Military Simulations</strong></p>
 <ul class="simple">
-<li><p>Multi-domain representation (land, air, sea, space, cyber)</p></li>
-<li><p>Realistic physics and constraint modeling</p></li>
-<li><p>Asymmetric information structures</p></li>
+<li><p>Solves the limitation of prior platforms (e.g., OpenAI Gym, Malmo) that capped agents at dozens, enabling <strong>battalion-level simulations</strong> with thousands of units<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://apps.dtic.mil/sti/trecms/pdf/AD1201723.pdf">4</a>.</p></li>
+<li><p>Demonstrated in UAV combat scenarios, where MAgent trains agents to coordinate strategies like flanking and target prioritization<a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">5</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
 </ul>
 </li>
-<li><p>State representation:</p>
+<li><p><strong>Emergent Tactical Intelligence</strong></p>
 <ul class="simple">
-<li><p>Hierarchical command structures</p></li>
-<li><p>Resource constraints (logistics, supply chains)</p></li>
-<li><p>Intelligence gathering mechanisms</p></li>
+<li><p>Agents develop <strong>human-like combat strategies</strong> through self-play, including:</p>
+<ul>
+<li><p><strong>Adaptive formations</strong> (e.g., dynamic envelopment maneuvers).</p></li>
+<li><p><strong>Resource-aware decisions</strong> (economy of force, target prioritization)<a class="reference external" href="https://ieee-cog.org/2020/papers/paper_277.pdf">6</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
 </ul>
 </li>
-<li><p>Action space design:</p>
+<li><p>In land-based wargames, MAgent-trained agents achieved <strong>&gt;70% win rates</strong> against rule-based opponents<a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">5</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
+</ul>
+</li>
+<li><p><strong>Efficient Training Techniques</strong></p>
 <ul class="simple">
-<li><p>Tactical vs. strategic decisions</p></li>
-<li><p>Time scales (immediate actions vs. long-term planning)</p></li>
-<li><p>Command and control limitations</p></li>
+<li><p>Integrates <strong>scenario-transfer learning</strong> (training on simple tasks first), <strong>self-play iteration</strong>, and <strong>rule-coupled rewards</strong> to accelerate convergence in combat tasks<a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">5</a>.</p></li>
+<li><p>Reduces exploration space by embedding domain knowledge (e.g., “protect high-value assets”) into reward functions<a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
+</ul>
+</li>
+<li><p><strong>Validation of Collective Tactics</strong></p>
+<ul class="simple">
+<li><p>Reveals how <strong>mass and economy of force</strong> principles emerge naturally in AI societies, validating doctrinal military concepts<a class="reference external" href="https://ieee-cog.org/2020/papers/paper_277.pdf">6</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
+<li><p>Provides a testbed for <strong>hierarchical command structures</strong> (e.g., feudal multi-agent systems) in large-scale wargames<a class="reference external" href="https://apps.dtic.mil/sti/trecms/pdf/AD1201723.pdf">4</a>.</p></li>
 </ul>
 </li>
 </ol>
-<p>This CWG will focus on tactical and strategic realism, embedding proper mechanics, accurate physics, and simulate the logistics of war along with rules and doctrine.  The initial game will be “headless” (minimal graphics) to test verify the game logic, prediction, and control. Once validated, graphics can be added to convert the game  into a purpose-built  simulation platform.</p>
 </section>
-<section id="phase-3-canonical-aigent-training">
-<h2>Phase 3: Canonical  Aigent Training<a class="headerlink" href="#phase-3-canonical-aigent-training" title="Link to this heading">#</a></h2>
-<p>Using DRL and other advanced AI methods, we will train an agent to adapt, learn, and prevail against the CWG over thousands of simulated multi-domain conflict scenarios. The goal is to create an AI capable of assisting in mission planning, in-theater decision-making, and post-conflict analysis.</p>
+<section id="future-directions">
+<h2>Future Directions<a class="headerlink" href="#future-directions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Realism Gap</strong>: Current simulations abstract physics (e.g., simplified gridworld combat)<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
+</ul>
+<p>MAgent bridges theoretical multi-agent RL and military applicability, offering a foundation for <strong>next-generation combat simulations</strong> where collective intelligence drives tactical innovation<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">5</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p>
 <ol class="arabic simple">
-<li><p>Training methodology:</p>
-<ul class="simple">
-<li><p>Self-play for symmetric scenarios</p></li>
-<li><p>Red team/Blue team approaches for asymmetric scenarios</p></li>
-<li><p>Curriculum learning from simple to complex scenarios</p></li>
-</ul>
-</li>
-<li><p>Decision architectures:</p>
-<ul class="simple">
-<li><p>Hierarchical / multi-level decision making</p></li>
-<li><p>Observation priorities (attention) in large state spaces</p></li>
-<li><p>Long / short term memory over extended time spans</p></li>
-</ul>
-</li>
-<li><p>Evaluation framework:</p>
-<ul class="simple">
-<li><p>Performance against human experts</p></li>
-<li><p>Robustness to unexpected scenarios (“fog of war”)</p></li>
-<li><p>Human interpretability of agent decisions</p></li>
-</ul>
-</li>
+<li><p><a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">https://ar5iv.labs.arxiv.org/html/1712.00600</a></p></li>
+<li><p><a class="reference external" href="https://cdn.aaai.org/ojs/11371/11371-13-14899-1-2-20201228.pdf">https://cdn.aaai.org/ojs/11371/11371-13-14899-1-2-20201228.pdf</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/pdf/1712.00600.pdf">https://arxiv.org/pdf/1712.00600.pdf</a></p></li>
+<li><p><a class="reference external" href="https://apps.dtic.mil/sti/trecms/pdf/AD1201723.pdf">https://apps.dtic.mil/sti/trecms/pdf/AD1201723.pdf</a></p></li>
+<li><p><a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf</a></p></li>
+<li><p><a class="reference external" href="https://ieee-cog.org/2020/papers/paper_277.pdf">https://ieee-cog.org/2020/papers/paper_277.pdf</a></p></li>
+<li><p><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/pdf/2012.09762.pdf">https://arxiv.org/pdf/2012.09762.pdf</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/tegg89/magnet">tegg89/magnet</a></p></li>
+<li><p><a class="reference external" href="https://www.reddit.com/r/reinforcementlearning/comments/1gze5c6/please_help_me_understand_reinforcement_learning/">https://www.reddit.com/r/reinforcementlearning/comments/1gze5c6/please_help_me_understand_reinforcement_learning/</a></p></li>
+<li><p><a class="reference external" href="https://www.mdpi.com/2076-3417/13/7/4569">https://www.mdpi.com/2076-3417/13/7/4569</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/abs/2012.09762">https://arxiv.org/abs/2012.09762</a></p></li>
+<li><p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0920379624000140">https://www.sciencedirect.com/science/article/pii/S0920379624000140</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/s41586-021-04301-9">https://www.nature.com/articles/s41586-021-04301-9</a></p></li>
+<li><p><a class="reference external" href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf">https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf</a></p></li>
+<li><p>[<a class="reference external" href="https://www.hse.ru/data/2025/06/04/2002461638/%D0%9C%D0%B0%D0%BB%D1%8B%D1%88%D0%B5%D0%B2%D0%B0_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F%203.pdf">https://www.hse.ru/data/2025/06/04/2002461638/Малышева_статья 3.pdf</a>](<a class="reference external" href="https://www.hse.ru/data/2025/06/04/2002461638/%D0%9C%D0%B0%D0%BB%D1%8B%D1%88%D0%B5%D0%B2%D0%B0_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F">https://www.hse.ru/data/2025/06/04/2002461638/Малышева_статья</a> 3.pdf)</p></li>
+<li><p><a class="reference external" href="https://arxiv.org/html/2502.13918v1">https://arxiv.org/html/2502.13918v1</a></p></li>
+<li><p><a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0020025523011192">https://www.sciencedirect.com/science/article/abs/pii/S0020025523011192</a></p></li>
 </ol>
-<p>Phase 3 aims to deliver a high-performing AI agent that supports warfighters with predictive insights and scenario analysis. The end goal is to develop a superhuman agent that enhances human decision-making before, during, and after conflict, delivering a decisive advantage in global 21st-century warfare.</p>
+<p>Below are sample runs for different Blue / Red team sizes:</p>
+<p><img alt="image-20250623085742133" src="../_images/image-20250623085742133.png" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HCSm0kVolqI?si=1ERLuZojbyTo1yPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 </section>
 
@@ -514,7 +497,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./start_here"
+            path: "./blog"
         },
         predefinedOutput: true
     }
@@ -532,22 +515,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="april.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Deep Reinforcement Learning for Space</p>
+        <p class="prev-next-title">April 2025</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="../FAQs/what_is_current_state.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">What’s the Current State?</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -565,9 +539,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-1-game-and-algorithm-review">Phase 1: Game and Algorithm Review</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-2-canonical-war-game-development">Phase 2: Canonical War Game Development</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-3-canonical-aigent-training">Phase 3: Canonical  Aigent Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-agent-reinforcement-learning">Multi-Agent Reinforcement Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicability-to-war-games-research">Applicability to War-Games Research</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions">Future Directions</a></li>
 </ul>
   </nav></div>
 

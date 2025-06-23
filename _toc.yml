@@ -33,4 +33,5 @@ parts:
     chapters:
       #- file: blog/march_2025.ipynb        # problem with notebook format
       - file: blog/march.md        # 
-      - file: blog/april.md        # 
+      - file: blog/april.md        #
+      - file: blog/june.md 
