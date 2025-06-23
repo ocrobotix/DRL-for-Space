@@ -416,7 +416,7 @@ document.write(`
 <h1>June 2025<a class="headerlink" href="#june-2025" title="Link to this heading">#</a></h1>
 <section id="multi-agent-reinforcement-learning">
 <h2>Multi-Agent Reinforcement Learning<a class="headerlink" href="#multi-agent-reinforcement-learning" title="Link to this heading">#</a></h2>
-<p><strong>MAgent</strong> is a scalable reinforcement learning platform designed to support research in <strong>many-agent environments</strong>, enabling simulations with thousands of agents on a single GPU server. It facilitates the study of emergent collective behaviors (e.g., communication, coordination, altruism) and optimal policy learning in large-scale AI societies.</p>
+<p><strong>MAgent</strong> is a scalable reinforcement learning platform designed to support research in <strong>many-agent environments</strong>, enabling simulations of thousands of agents on a single GPU. It facilitates the study of emergent collective behaviors (e.g., communication, coordination, altruism) and optimal policy learning in large-scale interactions.</p>
 </section>
 <section id="applicability-to-war-games-research">
 <h2>Applicability to War-Games Research<a class="headerlink" href="#applicability-to-war-games-research" title="Link to this heading">#</a></h2>
@@ -455,10 +455,11 @@ document.write(`
 <section id="future-directions">
 <h2>Future Directions<a class="headerlink" href="#future-directions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Realism Gap</strong>: Current simulations abstract physics (e.g., simplified gridworld combat)<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p></li>
+<li><p><strong>Realism Gap</strong>: Current simulations overly abstract the physics and interactions (e.g., simplified gridworld combat)<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>. An agent resembles a pixel but is an entity with distinct states that interact and learn from their environment and take actions.</p></li>
+<li><p><strong>Multi-agent challenges:</strong>  MAgent suffers from the same inherent difficulties with multi-agent RL, including non-stationarity, sample inefficiency, and generalization difficulties.</p></li>
 </ul>
-<p>MAgent bridges theoretical multi-agent RL and military applicability, offering a foundation for <strong>next-generation combat simulations</strong> where collective intelligence drives tactical innovation<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">5</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p>
-<p>Below are sample runs for different Blue / Red team sizes:</p>
+<p>MAgent has the potential to  be a framework for <strong>next-generation combat simulations</strong> where collective intelligence drives tactical innovation<a class="reference external" href="https://ar5iv.labs.arxiv.org/html/1712.00600">1</a><a class="reference external" href="https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf">5</a><a class="reference external" href="https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf">7</a>.</p>
+<p>Below is a sample run for Red vs Blue team battle. Each team has 400 agents!</p>
 <p><img alt="image-20250623085742133" src="../_images/image-20250623085742133.png" /></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HCSm0kVolqI?si=1ERLuZojbyTo1yPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <ol class="arabic simple">

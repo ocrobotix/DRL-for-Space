@@ -6,7 +6,7 @@
 
 ## Multi-Agent Reinforcement Learning
 
-**MAgent** is a scalable reinforcement learning platform designed to support research in **many-agent environments**, enabling simulations with thousands of agents on a single GPU server. It facilitates the study of emergent collective behaviors (e.g., communication, coordination, altruism) and optimal policy learning in large-scale AI societies.
+**MAgent** is a scalable reinforcement learning platform designed to support research in **many-agent environments**, enabling simulations of thousands of agents on a single GPU. It facilitates the study of emergent collective behaviors (e.g., communication, coordination, altruism) and optimal policy learning in large-scale interactions.
 
 ## Applicability to War-Games Research
 
@@ -27,13 +27,15 @@
 
 ## Future Directions
 
-- **Realism Gap**: Current simulations abstract physics (e.g., simplified gridworld combat)[1](https://ar5iv.labs.arxiv.org/html/1712.00600)[7](https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf).
+- **Realism Gap**: Current simulations overly abstract the physics and interactions (e.g., simplified gridworld combat)[1](https://ar5iv.labs.arxiv.org/html/1712.00600)[7](https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf). An agent resembles a pixel but is an entity with distinct states that interact and learn from their environment and take actions.
+
+- **Multi-agent challenges:**  MAgent suffers from the same inherent difficulties with multi-agent RL, including non-stationarity, sample inefficiency, and generalization difficulties. 
 
   
 
-MAgent bridges theoretical multi-agent RL and military applicability, offering a foundation for **next-generation combat simulations** where collective intelligence drives tactical innovation[1](https://ar5iv.labs.arxiv.org/html/1712.00600)[5](https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf)[7](https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf).
+MAgent has the potential to  be a framework for **next-generation combat simulations** where collective intelligence drives tactical innovation[1](https://ar5iv.labs.arxiv.org/html/1712.00600)[5](https://web.archive.org/web/20210428112814id_/https:/ieeexplore.ieee.org/ielx7/6287639/8600701/08789448.pdf)[7](https://qrs24.techconf.org/download/webpub/pdfs/QRS-C2024-43b2F0XafenffERHWle5q5/656500a611/656500a611.pdf). 
 
-Below are sample runs for different Blue / Red team sizes:
+Below is a sample run for Red vs Blue team battle. Each team has 400 agents!
 
 ![image-20250623085742133](C:/Users/terry/AppData/Roaming/Typora/typora-user-images/image-20250623085742133.png)
 
